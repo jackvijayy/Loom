@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 
 
 
@@ -15,10 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider> 
     <html lang="en">
-      <body className={`bg-dark-1`}>
+      <body className={`bg-dark-2`}>
         {children}
       </body>
     </html>
+    </ClerkProvider>
+    
+  
   );
 }
