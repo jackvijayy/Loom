@@ -1,6 +1,16 @@
 import Navbar from "@/components/Navbar"
 import Sidebar from "@/components/Sidebar"
+import type { Metadata } from "next";
+
 import { ReactNode } from "react"
+
+export const metadata: Metadata = {
+  title: "AQUA",
+  description: "NEXT GENERATION VIDEO CALL",
+  icons:{
+    icon:'/icons/logo.svg'
+  }
+};
 
 
 const HomeLayout = ({ children } :{ children:ReactNode}) => {

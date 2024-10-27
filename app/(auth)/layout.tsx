@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar"
 import Image from "next/image"
 import { ReactNode } from "react"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AQUA",
+  description: "NEXT GENERATION VIDEO CALL",
+  icons:{
+    icon:'/icons/logo.svg'
+  }
+};
 
 
 const RootLayout = ({ children } :{ children:ReactNode}) => {

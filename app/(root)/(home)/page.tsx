@@ -1,4 +1,4 @@
-import MeetingModel from '@/components/MeetingModel';
+
 import MeetingTypeList from '@/components/MeetingTypeList';
 import React from 'react'
 
