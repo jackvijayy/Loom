@@ -1,3 +1,5 @@
+import MeetingModel from '@/components/MeetingModel';
+import MeetingTypeList from '@/components/MeetingTypeList';
 import React from 'react'
 
 const Home = () => {
@@ -20,13 +22,13 @@ const Home = () => {
              {time}
             </h1>
             <p className='text-xl'>{date}</p>
-
           </div>
-
-
         </div>
-
       </div>
+      <MeetingTypeList/>
+      
+      
+
 
     </section>
   )
