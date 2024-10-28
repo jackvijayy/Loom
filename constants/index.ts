@@ -6,12 +6,12 @@
     },
     {
         lable:'Upcoming',
-        imgUrl:'/icons/Upcoming.svg',
+        imgUrl:'/icons/upcoming.svg',
         route:'/upcoming'
     },
     {
         lable:'Previous',
-        imgUrl:'/icons/Previous.svg',
+        imgUrl:'/icons/previous.svg',
         route:'/previous'
     },
     {
