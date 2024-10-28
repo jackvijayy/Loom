@@ -16,7 +16,7 @@
     },
     {
         lable:'Recordings',
-        imgUrl:'/icons/Recordings.svg',
+        imgUrl:'/icons/recordings.svg',
         route:'/recordings'
     },
     {
@@ -26,5 +26,15 @@
     },
 
 
+
+]
+
+export const avatarImages =[
+    '/images/avatar-1.jpeg',
+    '/images/avatar-2.jpeg',
+    '/images/avatar-3.png',
+    '/images/avatar-4.png',
+    '/images/avatar-5.png',
+   
 
 ]

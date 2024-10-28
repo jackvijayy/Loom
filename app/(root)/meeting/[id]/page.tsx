@@ -9,13 +9,22 @@ import { StreamCall, StreamTheme } from "@stream-io/video-react-sdk";
 import { useState } from "react";
 
 
+import { use } from 'react';
 
-const Meeting = ({ params:{id} }: { params: { id: string } }) => {
+
+
+const Meeting = ({ params}: { params:Promise< { id: string }> }) => {
 
   const [isSetupComplete, setIsSetupComplete] = useState(true);
   const {user,isLoaded} =useUser();
+
+
+  const unwrappedParams = use(params); // Unwrap the Promise
+  const { id } = unwrappedParams;
+
   const { call,isCallLoading }=useGetCallByid(id);
   if(!isLoaded || isCallLoading) return <Loader/>
+
 
 
 
