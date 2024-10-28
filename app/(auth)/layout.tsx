@@ -1,5 +1,4 @@
-import Navbar from "@/components/Navbar"
-import Image from "next/image"
+
 import { ReactNode } from "react"
 import type { Metadata } from "next";
 
